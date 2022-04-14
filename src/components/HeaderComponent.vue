@@ -1,5 +1,5 @@
 <template>
-  <div id="header-container">
+  <div id="header-container" class="q-mb-lg">
     <div class="row util-text-white util-background-color-blue">
       <div class="col-5">
         <div class="container q-pa-lg text-h5" style="padding-bottom: 10px">
