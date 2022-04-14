@@ -9,8 +9,38 @@ body {
   // height: 29.7cm;
   display: block;
   margin: 0 auto;
-  margin-bottom: 0.5cm;
+  margin-bottom: 1cm;
+  margin-top: 1cm;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+.text-engineer {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+// Utils and helpers
+
+.likedin-color {
+  color: #0a66c2;
+}
+.github-color {
+  color: #161b22;
+}
+.instgram-color-gradient {
+  color: #fff;
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  border-radius: 30%;
+}
+.portafolio-color {
+  color: #f800ae;
 }
 .util-background-color-blue {
   background-color: $blue-14;
@@ -20,6 +50,10 @@ body {
 }
 .util-text-blue {
   color: $blue-14;
+}
+.util-simple-link {
+  cursor: pointer;
+  text-decoration: underline;
 }
 @media print {
   body,

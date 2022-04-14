@@ -20,9 +20,11 @@
     </div>
     <div class="row">
       <div class="col-12 justify-start q-mb-md">
-        <div class="text-h6 q-pl-lg util-text-blue">Software Engineer</div>
+        <div class="text-h6 q-pl-lg util-text-blue text-engineer">
+          Software Engineer
+        </div>
       </div>
-      <div class="col-4 q-px-lg">
+      <div class="col-4 text-center q-px-lg">
         <div class="q-pb-sm">
           <q-icon
             name="fa-solid fa-phone q-mr-sm"
@@ -33,47 +35,55 @@
         </div>
         <div class="q-pb-sm">
           <q-icon
-            name="fa-solid fa-envelope q-mr-sm"
-            color="info"
+            name="fa-brands fa-google q-mr-sm"
+            color="red-6"
             :size="iconSize"
           />
-          <span class="text-subtitle2">epilef.rodriguez@gmail.com</span>
+          <span class="text-subtitle2"
+            ><a href="mailto:epilef.rodriguez@gmail.com"
+              >epilef.rodriguez@gmail.com</a
+            ></span
+          >
         </div>
       </div>
-      <div class="col-4 q-px-lg">
+      <div class="col-4 text-center q-px-lg">
         <div class="q-pb-sm">
           <q-icon
-            name="fa-solid fa-phone q-mr-sm"
-            color="info"
+            name="fa-brands fa-github-alt q-mr-sm github-color"
             :size="iconSize"
           />
-          <span class="text-subtitle2">This is a test</span>
+          <span class="text-subtitle2 util-simple-link" @click="goGithub"
+            >github.com/Khanos</span
+          >
         </div>
         <div class="q-pb-sm">
           <q-icon
-            name="fa-solid fa-phone q-mr-sm"
-            color="info"
+            name="fa-brands fa-linkedin q-mr-sm likedin-color"
             :size="iconSize"
           />
-          <span class="text-subtitle2">This is a test</span>
+          <span class="text-subtitle2 util-simple-link" @click="goLinkedin"
+            >linkedin.com/in/khanos</span
+          >
         </div>
       </div>
-      <div class="col-4 q-px-lg">
+      <div class="col-4 text-center q-px-lg">
         <div class="q-pb-sm">
           <q-icon
-            name="fa-solid fa-phone q-mr-sm"
-            color="info"
+            name="fa-brands fa-instagram q-mr-sm instgram-color-gradient"
             :size="iconSize"
           />
-          <span class="text-subtitle2">This is a test</span>
+          <span class="text-subtitle2 util-simple-link" @click="goInstagram"
+            >@epilef.js</span
+          >
         </div>
         <div class="q-pb-sm">
           <q-icon
-            name="fa-solid fa-phone q-mr-sm"
-            color="info"
+            name="fa-solid fa-link q-mr-sm portafolio-color"
             :size="iconSize"
           />
-          <span class="text-subtitle2">This is a test</span>
+          <span class="text-subtitle2 util-simple-link" @click="goPortafolio"
+            >khanos.github.io</span
+          >
         </div>
       </div>
     </div>
@@ -82,11 +92,31 @@
 
 <script>
 import { defineComponent } from 'vue';
+
+const goGithub = () => {
+  window.open('https://github.com/Khanos', '_blank');
+};
+const goLinkedin = () => {
+  window.open('https://www.linkedin.com/in/khanos/', '_blank');
+};
+const goInstagram = () => {
+  window.open('https://www.instagram.com/epilef.js/', '_blank');
+};
+const goPortafolio = () => {
+  window.open('https://khanos.github.io/', '_blank');
+};
+
 export default defineComponent({
   name: 'HeaderComponent',
   setup() {
     const iconSize = '20px';
     return { iconSize };
+  },
+  methods: {
+    goGithub,
+    goLinkedin,
+    goInstagram,
+    goPortafolio,
   },
 });
 </script>
