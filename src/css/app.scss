@@ -12,6 +12,15 @@ body {
   margin-bottom: 0.5cm;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
+.util-background-color-blue {
+  background-color: $blue-14;
+}
+.util-text-white {
+  color: #fff;
+}
+.util-text-blue {
+  color: $blue-14;
+}
 @media print {
   body,
   #page-container {
