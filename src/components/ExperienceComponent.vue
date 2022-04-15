@@ -22,6 +22,7 @@
             :title="item.title"
             :subtitle="item.subtitle"
             :icon="item.icon"
+            :avatar="item.avatar"
             :body="item.body"
           />
         </q-timeline>

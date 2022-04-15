@@ -1,5 +1,13 @@
 <template>
-  <q-timeline-entry :title="title" :subtitle="subtitle" :icon="icon">
+  <q-timeline-entry
+    v-if="!avatar"
+    :title="title"
+    :subtitle="subtitle"
+    :icon="icon ?? iconDefault"
+  >
+    <div v-html="body"></div>
+  </q-timeline-entry>
+  <q-timeline-entry v-else :title="title" :subtitle="subtitle" :avatar="avatar">
     <div v-html="body"></div>
   </q-timeline-entry>
 </template>
@@ -19,7 +27,11 @@ export default defineComponent({
     },
     icon: {
       type: String,
-      required: true,
+      required: false,
+    },
+    avatar: {
+      type: String,
+      required: false,
     },
     body: {
       type: String,
@@ -27,7 +39,9 @@ export default defineComponent({
     },
   },
   setup() {
-    return {};
+    return {
+      iconDefault: 'fa-solid fa-calendar-alt',
+    };
   },
 });
 </script>
@@ -39,6 +53,6 @@ export default defineComponent({
 }
 .q-timeline__content {
   padding-top: 0px !important;
-  padding-bottom: 10px !important;
+  padding-bottom: 0px !important;
 }
 </style>
