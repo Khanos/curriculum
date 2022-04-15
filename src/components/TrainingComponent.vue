@@ -1,24 +1,12 @@
 <template>
   <div id="training-container" class="q-mb-lg">
     <div class="row">
-      <div class="col-12">
-        <div class="q-pa-sm text-h5 section-title">
-          <q-icon
-            name="fa-solid fa-book-open q-mx-md"
-            color="primary"
-            size="30px"
-          />
-          <span class="text-subtitle1 text-primary"><b>Training</b></span>
-        </div>
-      </div>
       <div class="col-12 q-px-lg">
-        <q-timeline
-          layout="comfortable"
-          color="primary"
-          v-for="(item, index) in training"
-          :key="index"
-        >
+        <q-timeline layout="comfortable" color="primary">
+          <q-timeline-entry heading> Training </q-timeline-entry>
           <TrainingEntry
+            v-for="(item, index) in training"
+            :key="index"
             :body="item.body"
             :subtitle="item.subtitle"
             :icon="item.icon"
@@ -46,4 +34,8 @@ export default defineComponent({
 });
 </script>
 
-<style></style>
+<style>
+#training-container .q-timeline__heading {
+  left: -170px;
+}
+</style>

@@ -115,3 +115,14 @@ body {
     box-shadow: none;
   }
 }
+
+@media screen and (max-width: 599px) {
+  #page-container {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  #training-container .q-timeline__heading {
+    left: -40px !important;
+  }
+}
