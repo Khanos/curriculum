@@ -5,6 +5,7 @@
         <q-timeline layout="comfortable" color="secondary">
           <q-timeline-entry heading> Experience </q-timeline-entry>
           <ExperienceEntry
+            class="page-break"
             v-for="(item, index) in experiences"
             :key="index"
             :title="item.title"

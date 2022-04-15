@@ -5,6 +5,7 @@
         <q-timeline layout="comfortable" color="primary">
           <q-timeline-entry heading> Training </q-timeline-entry>
           <TrainingEntry
+            class="page-break"
             v-for="(item, index) in training"
             :key="index"
             :body="item.body"
