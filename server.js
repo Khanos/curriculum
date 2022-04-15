@@ -13,4 +13,4 @@ app.listen(port, () => {
   console.log('The app is running...');
   console.log(`http://${host}:${port}`);
 });
-module.exports = server;
+module.exports = app;
