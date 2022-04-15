@@ -38,7 +38,6 @@ import experiences from '../data/experiences';
 export default defineComponent({
   name: 'ExperienceComponent',
   components: {
-    // ExampleComponent
     ExperienceEntry,
   },
   setup() {
@@ -50,7 +49,7 @@ export default defineComponent({
 </script>
 
 <style>
-.q-timeline--comfortable .q-timeline__subtitle {
+#experience-container .q-timeline--comfortable .q-timeline__subtitle {
   width: 10% !important;
 }
 </style>

@@ -138,3 +138,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 >>>>>>> quasar-configs
+src/data/experiences.ts
+src/data/training.ts
