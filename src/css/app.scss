@@ -18,6 +18,10 @@ body {
   font-family: monospace;
   font-size: 1.5rem;
 }
+.q-timeline__heading-title {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
 // Utils and helpers
 .section-title {
   background-color: #f3f3f3;
@@ -66,9 +70,18 @@ body {
   print-color-adjust: exact !important;
 }
 @page {
-  margin: 0cm 0cm 1cm 0cm;
+  margin: 0cm 0cm 2cm 0cm;
+}
+@media all {
+  .page-break {
+    display: none;
+  }
 }
 @media print {
+  .page-break {
+    display: block;
+    page-break-before: always;
+  }
   a {
     page-break-inside: avoid;
   }
@@ -113,5 +126,20 @@ body {
     width: 100%;
     margin: 0;
     box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #page-container {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  #training-container .q-timeline__heading {
+    left: -40px !important;
+  }
+  #skills-container .q-timeline__heading-title {
+    margin: 0 !important;
+    text-align: center;
   }
 }

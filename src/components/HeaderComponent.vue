@@ -24,7 +24,7 @@
           Software Engineer
         </div>
       </div>
-      <div class="col-4 q-px-lg">
+      <div class="col-sm-4 col-xs-12 q-px-lg">
         <div class="q-pb-sm">
           <q-icon
             name="fa-solid fa-phone q-mr-sm"
@@ -46,7 +46,7 @@
           >
         </div>
       </div>
-      <div class="col-4 q-px-lg">
+      <div class="col-sm-4 col-xs-12 q-px-lg">
         <div class="q-pb-sm">
           <q-icon
             name="fa-brands fa-github-alt q-mr-sm github-color"
@@ -77,7 +77,7 @@
           >
         </div>
       </div>
-      <div class="col-4 q-px-lg">
+      <div class="col-sm-4 col-xs-12 q-px-lg">
         <div class="q-pb-sm">
           <q-icon
             name="fa-brands fa-instagram q-mr-sm instgram-color-gradient"

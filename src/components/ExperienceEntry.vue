@@ -53,6 +53,6 @@ export default defineComponent({
 }
 .q-timeline__content {
   padding-top: 0px !important;
-  padding-bottom: 0px !important;
+  padding-bottom: 10px !important;
 }
 </style>

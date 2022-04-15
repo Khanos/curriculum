@@ -140,3 +140,4 @@ yarn-error.log*
 >>>>>>> quasar-configs
 src/data/experiences.ts
 src/data/training.ts
+src/data/skills.ts
