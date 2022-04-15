@@ -20,7 +20,7 @@ body {
 }
 // Utils and helpers
 .section-title {
-  background-color: rgb(226, 226, 226);
+  background-color: #f3f3f3;
 }
 .likedin-color {
   color: #0a66c2;
@@ -97,6 +97,9 @@ body {
   dl {
     page-break-before: avoid;
   }
+  .q-timeline__content {
+    page-break-inside: avoid;
+  }
   .section-title {
     background-color: #e2e2e2;
   }
@@ -104,7 +107,7 @@ body {
     background-color: #2962ff;
   }
   #header-container .q-avatar {
-    right: 15px;
+    right: 5px;
   }
   #page-container {
     width: 100%;
