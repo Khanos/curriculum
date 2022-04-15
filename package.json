@@ -6,12 +6,11 @@
   "author": "khanos <epilef.rodriguez@gmail.com>",
   "private": true,
   "scripts": {
+    "build": "quasar build",
     "start": "node server.js",
     "serve": "quasar dev",
     "lint": "eslint --ext .js,.ts,.vue ./",
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
-    "build": "quasar build",
-    "heroku-postbuild": "yarn && yarn build",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
