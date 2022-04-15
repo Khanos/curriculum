@@ -44,6 +44,9 @@ body {
 .portafolio-color {
   color: #f800ae;
 }
+.dark-text {
+  color: #1d1d1d !important;
+}
 .util-background-color-blue {
   background-color: $blue-14;
 }
@@ -57,10 +60,55 @@ body {
   cursor: pointer;
   text-decoration: underline;
 }
+* {
+  color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+@page {
+  margin: 0cm 0cm 1cm 0cm;
+}
 @media print {
-  body,
+  a {
+    page-break-inside: avoid;
+  }
+  blockquote {
+    page-break-inside: avoid;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  img {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+  ul,
+  ol,
+  dl {
+    page-break-before: avoid;
+  }
+  .section-title {
+    background-color: #e2e2e2;
+  }
+  #header-container .util-background-color-blue {
+    background-color: #2962ff;
+  }
+  #header-container .q-avatar {
+    right: 15px;
+  }
   #page-container {
+    width: 100%;
     margin: 0;
-    box-shadow: 0;
+    box-shadow: none;
   }
 }

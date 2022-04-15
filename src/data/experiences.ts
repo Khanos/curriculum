@@ -23,11 +23,15 @@ const experiences = [
   {
     title: 'Full-Stack Software Developer',
     subtitle: '2016',
+    avatar:
+      'https://pbs.twimg.com/profile_images/1256814174/twitter-profile_400x400.png',
     body: '<span aria-hidden="true"><b>Client:</b> <a href="http://www.mediatrax.com/" target="_blank">MediaTrax LLC.</a>. <b>Projects:</b> I-Boards, Google Adwords (Now Google Ads), Okta <b>Tech:</b> #Okta #Adwords #JQuery #Bootstrap #SailsJs #NodeJS #Express #MicrosoftSQL</span>',
   },
   {
     title: 'Full-Stack Software Developer',
     subtitle: '2016',
+    avatar:
+      'https://pbs.twimg.com/profile_images/664822083847741440/arpG-xkO_400x400.jpg',
     body: '<span aria-hidden="true"><b>Client:</b> <a href="https://zuliatec.com/" target="_blank">ZuliaTec</a>. <b>Projects:</b> Proof of concept of E-learning Platform for USA-based company. <b>Tech:</b> #Angular.js #Bootstrap #NodeJS #Express #PostgreSQL</span>',
   },
   {
@@ -38,19 +42,22 @@ const experiences = [
   {
     title: 'Software Architect',
     subtitle: '2015',
-    avatar: 'http://www.pdvsa.com/templates/pdvsa/img/logo.svg',
+    avatar:
+      'https://pbs.twimg.com/profile_images/1285322191031214081/DBj-kSx-_400x400.jpg',
     body: '<span aria-hidden="true"><b>Client:</b> Guardián del Alba S.A. PDVSA Industrial. <b>Tech:</b> #C++ #python #java #Alfresco</span>',
   },
   {
     title: 'Functional Analyst',
     subtitle: '2014',
-    avatar: 'http://www.pdvsa.com/templates/pdvsa/img/logo.svg',
+    avatar:
+      'https://pbs.twimg.com/profile_images/1285322191031214081/DBj-kSx-_400x400.jpg',
     body: '<span aria-hidden="true"><b>Client:</b> Guardián del Alba S.A. PDVSA Industrial. <b>Tech:</b> #VisualParadign #OpenProject #UML</span>',
   },
   {
     title: 'Software Developer',
     subtitle: '2013',
-    avatar: 'http://www.pdvsa.com/templates/pdvsa/img/logo.svg',
+    avatar:
+      'https://pbs.twimg.com/profile_images/1285322191031214081/DBj-kSx-_400x400.jpg',
     body: '<span aria-hidden="true"><b>Client:</b> Guardián del Alba S.A. PDVSA Industrial.<b>Tech:</b> #Javascript #QooxDoo #Python #R #SQLAlquemy #PostgresSQL</span>',
   },
   {

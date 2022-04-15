@@ -24,7 +24,7 @@
           Software Engineer
         </div>
       </div>
-      <div class="col-4 text-center q-px-lg">
+      <div class="col-4 q-px-lg">
         <div class="q-pb-sm">
           <q-icon
             name="fa-solid fa-phone q-mr-sm"
@@ -40,20 +40,25 @@
             :size="iconSize"
           />
           <span class="text-subtitle2"
-            ><a href="mailto:epilef.rodriguez@gmail.com"
+            ><a class="dark-text" href="mailto:epilef.rodriguez@gmail.com"
               >epilef.rodriguez@gmail.com</a
             ></span
           >
         </div>
       </div>
-      <div class="col-4 text-center q-px-lg">
+      <div class="col-4 q-px-lg">
         <div class="q-pb-sm">
           <q-icon
             name="fa-brands fa-github-alt q-mr-sm github-color"
             :size="iconSize"
           />
-          <span class="text-subtitle2 util-simple-link" @click="goGithub"
-            >github.com/Khanos</span
+          <span class="text-subtitle2"
+            ><a
+              class="dark-text"
+              href="https://github.com/Khanos"
+              target="_blank"
+              >github.com/Khanos</a
+            ></span
           >
         </div>
         <div class="q-pb-sm">
@@ -61,19 +66,31 @@
             name="fa-brands fa-linkedin q-mr-sm likedin-color"
             :size="iconSize"
           />
-          <span class="text-subtitle2 util-simple-link" @click="goLinkedin"
-            >linkedin.com/in/khanos</span
+          <span class="text-subtitle2"
+            ><a
+              class="dark-text"
+              href="https://www.linkedin.com/in/khanos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >linkedin.com/in/khanos</a
+            ></span
           >
         </div>
       </div>
-      <div class="col-4 text-center q-px-lg">
+      <div class="col-4 q-px-lg">
         <div class="q-pb-sm">
           <q-icon
             name="fa-brands fa-instagram q-mr-sm instgram-color-gradient"
             :size="iconSize"
           />
-          <span class="text-subtitle2 util-simple-link" @click="goInstagram"
-            >@epilef.js</span
+          <span class="text-subtitle2"
+            ><a
+              class="dark-text"
+              href="https://www.instagram.com/epilef.js/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@epilef.js</a
+            ></span
           >
         </div>
         <div class="q-pb-sm">
@@ -81,8 +98,14 @@
             name="fa-solid fa-link q-mr-sm portafolio-color"
             :size="iconSize"
           />
-          <span class="text-subtitle2 util-simple-link" @click="goPortafolio"
-            >khanos.github.io</span
+          <span class="text-subtitle2"
+            ><a
+              class="dark-text"
+              href="https://khanos.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >khanos.github.io</a
+            ></span
           >
         </div>
       </div>
@@ -93,30 +116,11 @@
 <script>
 import { defineComponent } from 'vue';
 
-const goGithub = () => {
-  window.open('https://github.com/Khanos', '_blank');
-};
-const goLinkedin = () => {
-  window.open('https://www.linkedin.com/in/khanos/', '_blank');
-};
-const goInstagram = () => {
-  window.open('https://www.instagram.com/epilef.js/', '_blank');
-};
-const goPortafolio = () => {
-  window.open('https://khanos.github.io/', '_blank');
-};
-
 export default defineComponent({
   name: 'HeaderComponent',
   setup() {
     const iconSize = '20px';
     return { iconSize };
-  },
-  methods: {
-    goGithub,
-    goLinkedin,
-    goInstagram,
-    goPortafolio,
   },
 });
 </script>

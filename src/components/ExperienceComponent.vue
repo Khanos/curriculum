@@ -2,13 +2,13 @@
   <div id="experience-container" class="q-mb-lg">
     <div class="row">
       <div class="col-12">
-        <div class="container q-pa-sm text-h5 section-title">
+        <div class="q-pa-sm text-h5 section-title">
           <q-icon
-            name="fa-solid fa-suitcase q-mx-md"
+            name="fa-solid fa-briefcase q-mx-md"
             color="primary"
             size="30px"
           />
-          <span class="text-subtitle1 text-primary">Experience</span>
+          <span class="text-subtitle1 text-primary"><b>Experience</b></span>
         </div>
       </div>
       <div class="col-12 q-px-lg">
