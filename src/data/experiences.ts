@@ -1,7 +1,13 @@
 const experiences = [
   {
+    title: 'Software Engineer',
+    subtitle: '2022',
+    icon: 'code',
+    body: '<span aria-hidden="true"><b>Client:</b> <a href="https://cenora.com/" target="_blank">CENORA LLC.</a>. <b>Projects:</b> <u>Live Experience App</u> for Oceania cruises line. <u>Cenora Links</u>, a tool to create custom micro-websites to display products to potential clients. <b>Tech:</b> #VueJs #Quasar #Vuex #Vue-Router #NodeJS #Express #Puppeteer #Axios #Cheerio #MongoDB #Docker</span>',
+  },
+  {
     title: 'Frontend Software Developer',
-    subtitle: '2021 - Present',
+    subtitle: '2021',
     avatar:
       'https://media-exp1.licdn.com/dms/image/C4D0BAQHphD_i42zNrQ/company-logo_200_200/0/1633093485320?e=2147483647&v=beta&t=VnM9RYRQw7_ImnJ7Oc3tZwshdT6E80-HefgaIqJb8U4',
     body: '<span aria-hidden="true"><b>Client:</b> <a href="https://www.linkedin.com/company/itpex/" target="_blank">ITPex Studio LLC.</a>. <b>Projects:</b> <a href="https://derfdice.com/" target="_blank">DerfDice</a> and a Proof of concept of an E-learning Platform with gamification. <b>Tech:</b> #VueJs #Vuetify #Vuex #Vue-Router #NodeJS #Express #JQuery #Bootstrap </span>',
