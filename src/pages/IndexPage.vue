@@ -1,17 +1,29 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page>
+    <HeaderComponent />
+    <ExperienceComponent />
+    <TrainingComponent />
+    <SkillsComponent />
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import HeaderComponent from 'components/HeaderComponent.vue';
+import ExperienceComponent from 'components/ExperienceComponent.vue';
+import TrainingComponent from 'components/TrainingComponent.vue';
+import SkillsComponent from 'components/SkillsComponent.vue';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: {
+    HeaderComponent,
+    ExperienceComponent,
+    TrainingComponent,
+    SkillsComponent,
+  },
+  setup() {
+    return {};
+  }
 })
 </script>
