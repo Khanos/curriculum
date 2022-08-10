@@ -6,6 +6,7 @@
   "author": "Epilef Rodriguez <epilef.rodriguez@gmail.com>",
   "private": true,
   "scripts": {
+    "start": "node server.js",
     "dev": "quasar dev",
     "build": "quasar build",
     "build:pwa": "quasar build -m pwa",
