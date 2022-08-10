@@ -4,6 +4,7 @@
     <ExperienceComponent />
     <TrainingComponent />
     <SkillsComponent />
+    <p class="q-pa-lg text-center">Made with <q-icon color="red" name="fa-solid fa-heart"/> and <a href="https://github.com/Khanos/curriculum">Shared on</a> <q-icon name="fa-brands fa-github-alt" /></p> 
   </q-page>
 </template>
 

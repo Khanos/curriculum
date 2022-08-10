@@ -7,20 +7,26 @@
     </div>
     <div class="row q-px-md">
       <div
-        class="col-xs-10 col-sm-6 col-md-4"
+        class="col-xs-4 col-sm-3 col-md-2 q-pa-sm"
         v-for="(skill, index) in skills"
         :key="index"
       >
-        <div class="q-pa-sm row justify-end">
-          <div class="text-h6 q-pt-xs q-pr-sm">{{ skill.name }}</div>
-          <q-rating
-            v-model="skill.level"
-            color="primary"
-            size="18px"
-            :icon="icons"
-            readonly
-          />
-        </div>
+        <q-card flat class="my-card text-center q-pa-none">
+          <q-card-section class="q-pa-none q-ma-none">
+            <q-img
+              :src="skill.img"
+              :alt="skill.name"
+              loading="lazy"
+              spinner-color="white"
+              style="max-width: 80px;"
+            />
+
+          </q-card-section>
+
+          <q-card-section>
+            <div class="text-caption text-uppercase">{{skill.name}}</div>
+          </q-card-section>
+        </q-card>
       </div>
     </div>
   </div>
@@ -32,6 +38,7 @@ import skills from '../models/skills';
 export default defineComponent({
   name: 'SkillsComponent',
   setup() {
+    const test = skills[0];
     return {
       defaultIcon: 'fa-solid fa-code',
       icons: [
@@ -42,6 +49,7 @@ export default defineComponent({
         'fa-solid fa-face-grin-hearts',
       ],
       skills,
+      test
     };
   },
 });
