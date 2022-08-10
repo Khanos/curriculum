@@ -24,19 +24,11 @@
           Software Engineer
         </div>
       </div>
-      <div class="col-sm-4 col-xs-12 q-px-lg">
+      <div class="col-sm-4 col-xs-12 q-px-lg header-info">
         <div class="q-pb-sm">
           <q-icon
-            name="fa-solid fa-phone q-mr-sm"
-            color="green-7"
-            :size="iconSize"
-          />
-          <span class="text-subtitle2">(+58) 0414-3752928</span>
-        </div>
-        <div class="q-pb-sm">
-          <q-icon
-            name="fa-brands fa-google q-mr-sm"
-            color="red-6"
+            name="fa-solid fa-envelope q-mr-sm"
+            color="blue-6"
             :size="iconSize"
           />
           <span class="text-subtitle2"
@@ -45,8 +37,6 @@
             ></span
           >
         </div>
-      </div>
-      <div class="col-sm-4 col-xs-12 q-px-lg">
         <div class="q-pb-sm">
           <q-icon
             name="fa-brands fa-github-alt q-mr-sm github-color"
@@ -58,6 +48,22 @@
               href="https://github.com/Khanos"
               target="_blank"
               >github.com/Khanos</a
+            ></span
+          >
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12 q-px-lg header-info">
+        <div class="q-pb-sm">
+          <q-icon
+            name="fa-brands fa-hackerrank q-mr-sm hackerrank-color"
+            :size="iconSize"
+          />
+          <span class="text-subtitle2"
+            ><a
+              class="dark-text"
+              href="https://www.hackerrank.com/KhanosVe"
+              target="_blank"
+              >hackerrank.com/KhanosVe</a
             ></span
           >
         </div>
@@ -77,7 +83,7 @@
           >
         </div>
       </div>
-      <div class="col-sm-4 col-xs-12 q-px-lg">
+      <div class="col-sm-4 col-xs-12 q-px-lg header-info">
         <div class="q-pb-sm">
           <q-icon
             name="fa-brands fa-instagram q-mr-sm instgram-color-gradient"

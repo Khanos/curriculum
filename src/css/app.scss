@@ -32,6 +32,9 @@ body {
 .github-color {
   color: #161b22;
 }
+.hackerrank-color {
+  color: #1ba94c;
+}
 .instgram-color-gradient {
   color: #fff;
   background: linear-gradient(
@@ -70,7 +73,10 @@ body {
   print-color-adjust: exact !important;
 }
 @page {
-  margin: 0cm 0cm 2cm 0cm;
+  margin: 2cm 0cm 2cm 0cm;
+}
+@page :first {
+  margin-top: 0cm; // top margin for first page of paper
 }
 @media all {
   .page-break {
@@ -78,6 +84,14 @@ body {
   }
 }
 @media print {
+  .skill-card{
+    height: auto !important;
+    width: 16.6667% !important;
+  }
+  .header-info{
+    height: auto !important;
+    width: 33.3333% !important;
+  }
   .page-break {
     display: block;
     page-break-before: always;

@@ -7,7 +7,7 @@
     </div>
     <div class="row q-px-md">
       <div
-        class="col-xs-4 col-sm-3 col-md-2 q-pa-sm"
+        class="col-xs-4 col-sm-3 col-md-2 q-pa-sm skill-card"
         v-for="(skill, index) in skills"
         :key="index"
       >
