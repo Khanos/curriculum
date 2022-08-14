@@ -13,6 +13,16 @@ body {
   margin-top: 1cm;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
+.location-text {
+  font-size: 0.94rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.16667em;
+}
+.location-sub-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
 .text-engineer {
   font-weight: bold;
   font-family: monospace;

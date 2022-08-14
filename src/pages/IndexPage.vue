@@ -1,6 +1,16 @@
 <template>
   <q-page>
     <HeaderComponent />
+    <p class="text-center location-text q-pb-none q-mb-none">
+      I'm currently in Venezuela 5101 
+      <q-img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Venezuela_%28state%29.png/800px-Flag_of_Venezuela_%28state%29.png"
+        width="28px"
+      />
+    </p>
+    <p class="q-gutter-none text-center location-sub-text q-pb-none q-mb-none">
+      Working remotely and open to relocation.
+    </p>
     <ExperienceComponent />
     <TrainingComponent />
     <SkillsComponent />
