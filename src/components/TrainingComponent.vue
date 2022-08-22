@@ -19,15 +19,22 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent, onBeforeMount } from 'vue';
+import { storeToRefs } from 'pinia';
 import TrainingEntry from './TrainingEntry.vue';
-import training from '../models/training';
+import { useTrainingStore } from 'src/stores/TrainingStore';
 export default defineComponent({
   name: 'TrainingComponent',
   components: {
     TrainingEntry,
   },
   setup() {
+    const store = useTrainingStore();
+    const { training } = storeToRefs(store);
+    const { initTraining } = store;
+    onBeforeMount(() => {
+      initTraining();
+    });
     return {
       training,
     };

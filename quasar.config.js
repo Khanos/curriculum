@@ -69,7 +69,11 @@ module.exports = configure(function (/* ctx */) {
 
       // publicPath: '/',
       // analyze: true,
-      // env: {},
+      env: {
+        API_URL_EXPERIENCE: 'https://d1gxxvexl9.execute-api.us-east-1.amazonaws.com/default/getExperience',
+        API_URL_TRAINING: 'https://fqhlrng8j9.execute-api.us-east-1.amazonaws.com/default/getTraining',
+        API_URL_SKILLS: 'https://h2r48uj93d.execute-api.us-east-1.amazonaws.com/default/getSkills',
+      },
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,

@@ -21,15 +21,22 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent, onBeforeMount } from 'vue';
+import { storeToRefs } from 'pinia';
 import ExperienceEntry from './ExperienceEntry.vue';
-import experiences from '../models/experiences';
+import { useExperienceStore } from 'src/stores/ExperienceStore';
 export default defineComponent({
   name: 'ExperienceComponent',
   components: {
     ExperienceEntry,
   },
   setup() {
+    const store = useExperienceStore();
+    const { experiences } = storeToRefs(store);
+    const { initExperience } = store;
+    onBeforeMount(() => {
+      initExperience();
+    });
     return {
       experiences,
     };

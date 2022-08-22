@@ -33,12 +33,18 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-import skills from '../models/skills';
+import { defineComponent, onBeforeMount } from 'vue';
+import { storeToRefs } from 'pinia';
+import { useSkillsStore } from '../stores/SkillsStore';
 export default defineComponent({
   name: 'SkillsComponent',
   setup() {
-    const test = skills[0];
+    const store = useSkillsStore();
+    const { skills } = storeToRefs(store);
+    const { initSkills } = store;
+    onBeforeMount(() => {
+      initSkills();
+    });
     return {
       defaultIcon: 'fa-solid fa-code',
       icons: [
@@ -49,7 +55,6 @@ export default defineComponent({
         'fa-solid fa-face-grin-hearts',
       ],
       skills,
-      test
     };
   },
 });
