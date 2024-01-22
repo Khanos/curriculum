@@ -32,7 +32,6 @@ body {
   font-size: 2rem;
   padding-bottom: 0.5rem;
 }
-// Utils and helpers
 .section-title {
   background-color: #f3f3f3;
 }
@@ -82,30 +81,7 @@ body {
   -webkit-print-color-adjust: exact !important;
   print-color-adjust: exact !important;
 }
-@page {
-  margin: 2cm 0cm 2cm 0cm;
-}
-@page :first {
-  margin-top: 0cm; // top margin for first page of paper
-}
-@media all {
-  .page-break {
-    display: none;
-  }
-}
 @media print {
-  .skill-card{
-    height: auto !important;
-    width: 16.6667% !important;
-  }
-  .header-info{
-    height: auto !important;
-    width: 33.3333% !important;
-  }
-  .page-break {
-    display: block;
-    page-break-before: always;
-  }
   a {
     page-break-inside: avoid;
   }
@@ -133,6 +109,17 @@ body {
   ol,
   dl {
     page-break-before: avoid;
+  }
+  .skill-card{
+    height: auto !important;
+    width: 16.6667% !important;
+  }
+  .header-info{
+    height: auto !important;
+    width: 33.3333% !important;
+  }
+  .page-break {
+    display: block;
   }
   .q-timeline__content {
     page-break-inside: avoid;
