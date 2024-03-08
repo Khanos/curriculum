@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { api } from 'boot/axios'
+import experience from 'src/data/experience';
 
 export const useExperienceStore = defineStore('experience', {
   state: () => ({
@@ -11,10 +11,7 @@ export const useExperienceStore = defineStore('experience', {
   actions: {
     async initExperience() {
       try {
-        const response = await api.get(process.env.API_URL_EXPERIENCE);
-        if(response.status === 200) {
-          this.experiences = response.data;
-        }
+        this.experiences = experience;
       } catch (error) {
         console.log(error);
       }

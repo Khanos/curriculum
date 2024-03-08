@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { api } from 'boot/axios'
+import training from 'src/data/training';
 
 export const useTrainingStore = defineStore('training', {
   state: () => ({
@@ -11,10 +11,7 @@ export const useTrainingStore = defineStore('training', {
   actions: {
     async initTraining() {
       try {
-        const response = await api.get(process.env.API_URL_TRAINING);
-        if(response.status === 200) {
-          this.training = response.data;
-        }
+        this.training = training;
       } catch (error) {
         console.log(error);
       }

@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { api } from 'boot/axios'
+import Skills from 'src/data/skills';
 
 export const useSkillsStore = defineStore('skills', {
   state: () => ({
@@ -11,10 +11,7 @@ export const useSkillsStore = defineStore('skills', {
   actions: {
     async initSkills() {
       try {
-        const response = await api.get(process.env.API_URL_SKILLS);
-        if(response.status === 200) {
-          this.skills = response.data;
-        }
+        this.skills = Skills;
       } catch (error) {
         console.log(error);
       }
