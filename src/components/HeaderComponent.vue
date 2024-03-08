@@ -101,16 +101,16 @@
         </div>
         <div class="q-pb-sm">
           <q-icon
-            name="fa-solid fa-link q-mr-sm portafolio-color"
+            name="fa-solid fa-user-tie q-mr-sm portafolio-color"
             :size="iconSize"
           />
           <span class="text-subtitle2"
             ><a
               class="dark-text"
-              href="https://khanos.github.io/"
+              href="https://www.epilef.org"
               target="_blank"
               rel="noopener noreferrer"
-              >khanos.github.io</a
+              >Portfolio</a
             ></span
           >
         </div>
