@@ -1,5 +1,11 @@
 const experience = [
   {
+    title: 'Tech Lead',
+    subtitle: 'Aug 2024',
+    avatar: 'https://media.licdn.com/dms/image/v2/D560BAQF2KTaJl3IXsA/company-logo_200_200/company-logo_200_200/0/1663019256322/achievecareers_logo?e=2147483647&v=beta&t=HJJxujcJSeJYeO5Y5c9gweJhTKNa-ToKD-0TARSZHfs',
+    body: '<span aria-hidden="true"><b>Client:</b> <a href="https://www.achieve.com/" target="_blank">© 2024 Achieve.com</a>. <b>Projects:</b> Tech Lead with proven ability to optimize team workflows, solve complex problems strategically, and ensure tech stack excellence. Managed top-performing landing pages, driving key conversions. Championed SOLID principles, rigorous unit testing, and high code coverage. <b>Tech:</b> #Nextjs #Node #NodeJS #Express #Tailwind #Jest #Bitbucket #Jira #A/BTesting </span>',
+  },
+  {
     title: 'Software Engineer',
     subtitle: 'Dec 2023',
     avatar: 'https://www.pngfind.com/pngs/m/424-4241106_mercadolibre-logo-de-mercado-libre-hd-png-download.png',
